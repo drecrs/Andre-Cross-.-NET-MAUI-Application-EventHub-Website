@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventHub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0f1226;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4c1d95, #ff3d71);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 22px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: white;
+            color: #1b1f3b;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 70px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #ccc;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: #1a1f3d;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff3d71;
+        }
+
+        .developer {
+            text-align: center;
+        }
+
+        .developer img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4c1d95, #ff3d71);
+            margin-bottom: 20px;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 50px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1>EventHub</h1>
+
+        <p>
+            A mobile platform that helps promoters advertise events
+            and allows patrons to discover concerts, parties,
+            nightlife experiences, and sporting, fitness, food and other events.
+        </p>
+
+        <a href="https://github.com/drecrs/EventHubApp-/releases/download/v1.0.0/com.companyname.eventhubapp.apk" class="btn">Download APK</a>
+    </header>
+
+    <!-- USER MANUAL -->
+    <section>
+        <div class="container">
+
+            <h2>User Manual</h2>
+
+            <p class="subtitle">
+                Learn how to use the EventHub mobile application.
+            </p>
+
+            <div class="card">
+                <h3>1. Register an Account</h3>
+
+                <p>
+                    Open the application, select Register,
+                    enter your details, and create your account.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2. Login</h3>
+
+                <p>
+                    Enter your email and password to access
+                    the application dashboard.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3. Browse Events</h3>
+
+                <p>
+                    Search and filter events using categories,
+                    dates, and event titles.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>4. Create Events</h3>
+
+                <p>
+                    Promoters can create, edit, and manage events
+                    while uploading flyers and venue information.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>5. Open Event Locations</h3>
+
+                <p>
+                    Users can open event venues directly using
+                    Google Maps integration.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- APK DOWNLOAD -->
+    <section style="background:#12162f;">
+        <div class="container">
+
+            <h2>Download APK</h2>
+
+            <p class="subtitle">
+                Install the EventHub Android application.
+            </p>
+
+            <div class="card" style="text-align:center;">
+                <h3>EventHub APK File</h3>
+
+                <p>
+                    Compatible with Android devices.
+                </p>
+
+                <a href="https://github.com/drecrs/EventHubApp-/releases/download/v1.0.0/com.companyname.eventhubapp.apk" class="btn">
+                    Download APK
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DEVELOPER PROFILE -->
+    <section>
+        <div class="container developer">
+
+            <h2>Developer Profile</h2>
+
+            <img alt="Developer Image" />
+
+            <h3 style="font-size:35px;">Andre Cross</h3>
+
+            <p style="max-width:700px; margin:auto; margin-top:20px; color:#ccc;">
+                Andre Cross is the lead developer and designer
+                behind EventHub. The application was developed
+                using .NET MAUI, C#, XAML, SQLite, and Figma.
+                The project demonstrates skills in mobile
+                application development, UI/UX design,
+                MVVM architecture, database integration,
+                and native mobile functionality.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- MARKETING & MONETIZATION -->
+    <section style="background:#12162f;">
+        <div class="container">
+
+            <h2>Marketing & Monetization Strategy</h2>
+
+            <p class="subtitle">
+                Strategies used to promote and monetize the application.
+            </p>
+
+            <div class="strategy-grid">
+
+                <div class="card">
+                    <h3>Marketing Strategy</h3>
+
+                    <ul>
+                        <li>Social media promotion using Instagram and TikTok</li>
+                        <li>Partnerships with event promoters and DJs</li>
+                        <li>Digital advertising campaigns</li>
+                        <li>Influencer collaborations</li>
+                        <li>University event partnerships</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Monetization Strategy</h3>
+
+                    <ul>
+                        <li>Featured event advertisements</li>
+                        <li>Premium promoter subscriptions</li>
+                        <li>Sponsored promotions</li>
+                        <li>Ticket commission partnerships</li>
+                        <li>Brand sponsorship opportunities</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 EventHub Mobile Application |
+            Developed by Andre Cross
+        </p>
+    </footer>
+
+</body>
+</html>
